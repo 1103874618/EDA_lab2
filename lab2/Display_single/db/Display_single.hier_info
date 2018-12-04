@@ -1,0 +1,31 @@
+|Display_single
+D_in[0] => D_hex~50.IN0
+D_in[0] => D_hex~46.IN0
+D_in[0] => D_hex~41.IN0
+D_in[0] => D_hex~36.IN0
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~27.IN0
+D_in[0] => D_hex~52.IN0
+D_in[0] => D_hex~43.IN0
+D_in[0] => D_hex~37.IN0
+D_in[1] => D_hex~49.IN0
+D_in[1] => D_hex~40.IN0
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~45.IN0
+D_in[1] => D_hex~35.IN0
+D_in[2] => D_hex~48.IN0
+D_in[2] => D_hex~34.IN0
+D_in[2] => D_hex~39.IN0
+D_in[3] => D_hex~39.IN1
+D_in[3] => D_hex~34.IN1
+D_in[3] => D_hex~48.IN1
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~7.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~15.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~21.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~24.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~33.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~53.DB_MAX_OUTPUT_PORT_TYPE
+
+
