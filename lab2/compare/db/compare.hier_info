@@ -1,0 +1,16 @@
+|compare
+c_in[0] => z~7.IN0
+c_in[0] => z~2.IN1
+c_in[0] => z~12.IN0
+c_in[0] => z~9.IN0
+c_in[0] => z~3.IN1
+c_in[1] => z~6.IN0
+c_in[1] => z~11.IN0
+c_in[1] => z~1.IN1
+c_in[2] => z~0.IN1
+c_in[2] => z~5.IN1
+c_in[3] => z~5.IN0
+c_in[3] => z~0.IN0
+z <= z~13.DB_MAX_OUTPUT_PORT_TYPE
+
+
