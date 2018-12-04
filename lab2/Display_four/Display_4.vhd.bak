@@ -1,0 +1,55 @@
+-- LIBRARY ieee;
+-- USE ieee.STD_LOGIC_1164.all;
+
+-- ENTITY seven_seg_comp IS 
+-- PORT(
+--        C:IN STD_LOGIC_VECTOR(2 DOWNTO 0 );
+--        Dispaly: OUT STD_LOGIC_VECTOR(0 TO 6)); --0为灯亮
+-- END seven_seg_comp;
+
+-- ARCHITECTURE Behavior OF seven_seg_comp IS
+-- BEGIN
+
+-- Dispaly<="1001000" WHEN C="000" ELSE --H
+--          "0110000" WHEN C="001" ELSE --E
+--          "1110001" WHEN C="010" OR C="011" ELSE --L
+--          "0000001" WHEN C="100" ELSE --O
+--          "1111111";
+
+-- END Behavior;
+LIBRARY ieee;
+USE ieee.STD_LOGIC_1164.all;
+
+ENTITY Display_4 IS
+PORT(
+  D4_in0:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+  D4_in1:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+  D4_in2:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+  D4_in3:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+  HEX0 :OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+  HEX1 :OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+  HEX2 :OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+  HEX3 :OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+
+);
+END Display_4;
+
+ARCHITECTURE arch_D4 OF Display_4 IS
+
+COMPONENT Dispaly_single 
+PORT(
+  D_in:IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+  D_hex: OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+);
+END COMPONENT;
+
+BEGIN
+
+D_1: Dispaly_single PORT MAP (D_in=>D4_in0,D_hex=>HEX0);
+D_2: Dispaly_single PORT MAP (D_in=>D4_in1,D_hex=>HEX1);
+D_3: Dispaly_single PORT MAP (D_in=>D4_in2,D_hex=>HEX2);
+D_4: Dispaly_single PORT MAP (D_in=>D4_in3,D_hex=>HEX3);
+
+
+END arch_D4;
