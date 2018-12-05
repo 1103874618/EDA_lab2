@@ -11,71 +11,45 @@ PORT(
 END Display_single;
 
 ARCHITECTURE D_arch OF Display_single IS
-SIGNAL hex_out0: STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL hex_out1: STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL hex_out2: STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL hex_out3: STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL hex_out4: STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL hex_out5: STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL hex_out6: STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL a,b,c,d : STD_LOGIC;
 
 BEGIN
+a<=D_in(3);
+b<=D_in(2);
+c<=D_in(1);
+d<=D_in(0);
+D_hex(0)<= NOT((NOT a AND c) OR 
+           (NOT(a OR c OR d)) OR
+           ((NOT a) AND b AND (NOT c) AND d) OR
+           (a AND (NOT b) AND (NOT c) AND d));--ok
 
-D_hex(0)<=((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) ;
+D_hex(1)<= NOT((NOT(a OR c OR d))OR
+           (NOT a AND NOT b AND c) OR
+           (a AND NOT b AND NOT c));
 
-D_hex(1)<=((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) ;
+D_hex(2)<=NOT((NOT(a OR b OR c OR d)) OR
+          (NOT a AND b) OR
+          (a AND NOT b AND NOT c) OR
+          (NOT a AND NOT b AND c AND d));
 
-D_hex(2)<=((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) ;
+D_hex(3)<=NOT((NOT(b OR c OR d )) OR 
+          (NOT a AND NOT b AND c) OR
+          (NOT a AND b AND NOT c AND d) OR
+          (NOT a AND b AND c AND NOT d) OR
+          (a AND NOT b AND NOT c AND d));
 
-D_hex(3)<=((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) ;
+D_hex(4)<=NOT((NOT(b OR c OR d)) OR
+          (NOT a AND c AND NOT d) OR
+          (NOT a AND NOT b AND NOT c AND d));
 
-D_hex(4)<=((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0'))  ;
+D_hex(5)<=NOT((NOT a AND NOT c) OR
+          (a AND NOT b AND NOT c) OR
+          (NOT a AND b AND c AND NOT d));
 
-D_hex(5)<=((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) ;
-
-D_hex(6)<=((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '0') OR (D_in(1) XOR '1') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) AND
-          ((D_in(3) XOR '0') OR (D_in(2) XOR '1') OR (D_in(1) XOR '1') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '0')) AND
-          ((D_in(3) XOR '1') OR (D_in(2) XOR '0') OR (D_in(1) XOR '0') OR (D_in(0) XOR '1')) ;
+D_hex(6)<=NOT((NOT a AND b AND NOT c) OR
+          (a AND NOT b AND NOT c) OR
+          (NOT a AND NOT b AND c) OR
+          (NOT a AND b AND c AND NOT d));
 
 END D_arch;
 -----------

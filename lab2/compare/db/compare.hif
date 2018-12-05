@@ -31,7 +31,7 @@ ON
 # case_insensitive
 # source_file
 compare.vhd
-32321f6c5a9c1c477948da46e96927b2
+c83e73b9cd9b82cfc271e216b012
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

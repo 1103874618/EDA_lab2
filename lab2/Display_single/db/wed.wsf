@@ -146,8 +146,8 @@ VECTOR("F:/study/数字电路/实验/lab2/Display_single/db/Display_single.sim.cvwf")
 VECTOR("F:/study/数字电路/实验/lab2/Display_single/Display_single.vwf")
 {
 	ZOOM{
-		ZBEGIN = 42435;
-		ZEND = 89585;
+		ZBEGIN = 0;
+		ZEND = 47150;
 		NUMERATOR = 20;
 		DENOMINATOR = 1000;
 		TOP_INDEX = 0;

@@ -1,0 +1,14 @@
+|unit_trans
+u_in[0] => ~NO_FANOUT~
+u_in[1] => ~NO_FANOUT~
+u_in[2] => ~NO_FANOUT~
+u_in[3] => m[0].DATAIN
+u_in[3] => m[3].DATAIN
+u_in[3] => m[2].DATAIN
+u_in[3] => m[1].DATAIN
+m[0] <= u_in[3].DB_MAX_OUTPUT_PORT_TYPE
+m[1] <= u_in[3].DB_MAX_OUTPUT_PORT_TYPE
+m[2] <= u_in[3].DB_MAX_OUTPUT_PORT_TYPE
+m[3] <= u_in[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

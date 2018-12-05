@@ -1,5 +1,5 @@
 Simulator report for Display_single
-Tue Dec 04 14:49:14 2018
+Wed Dec 05 18:29:55 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -118,13 +118,13 @@ The following table displays output ports that do not toggle to 1 during simulat
 +--------------------------+--------------------------------+------------------+
 ; Node Name                ; Output Port Name               ; Output Port Type ;
 +--------------------------+--------------------------------+------------------+
-; |Display_single|D_hex~2  ; |Display_single|D_hex~2        ; combout          ;
-; |Display_single|D_hex~7  ; |Display_single|D_hex~7        ; combout          ;
-; |Display_single|D_hex~15 ; |Display_single|D_hex~15       ; combout          ;
-; |Display_single|D_hex~54 ; |Display_single|D_hex~54       ; combout          ;
-; |Display_single|D_hex~24 ; |Display_single|D_hex~24       ; combout          ;
-; |Display_single|D_hex~33 ; |Display_single|D_hex~33       ; combout          ;
-; |Display_single|D_hex~55 ; |Display_single|D_hex~55       ; combout          ;
+; |Display_single|D_hex~42 ; |Display_single|D_hex~42       ; combout          ;
+; |Display_single|D_hex~43 ; |Display_single|D_hex~43       ; combout          ;
+; |Display_single|D_hex~44 ; |Display_single|D_hex~44       ; combout          ;
+; |Display_single|D_hex~45 ; |Display_single|D_hex~45       ; combout          ;
+; |Display_single|D_hex~46 ; |Display_single|D_hex~46       ; combout          ;
+; |Display_single|D_hex~47 ; |Display_single|D_hex~47       ; combout          ;
+; |Display_single|D_hex~48 ; |Display_single|D_hex~48       ; combout          ;
 ; |Display_single|D_hex[0] ; |Display_single|D_hex[0]       ; padio            ;
 ; |Display_single|D_hex[1] ; |Display_single|D_hex[1]       ; padio            ;
 ; |Display_single|D_hex[2] ; |Display_single|D_hex[2]       ; padio            ;
@@ -132,10 +132,10 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Display_single|D_hex[4] ; |Display_single|D_hex[4]       ; padio            ;
 ; |Display_single|D_hex[5] ; |Display_single|D_hex[5]       ; padio            ;
 ; |Display_single|D_hex[6] ; |Display_single|D_hex[6]       ; padio            ;
-; |Display_single|D_in[3]  ; |Display_single|D_in[3]~corein ; combout          ;
-; |Display_single|D_in[2]  ; |Display_single|D_in[2]~corein ; combout          ;
-; |Display_single|D_in[1]  ; |Display_single|D_in[1]~corein ; combout          ;
 ; |Display_single|D_in[0]  ; |Display_single|D_in[0]~corein ; combout          ;
+; |Display_single|D_in[1]  ; |Display_single|D_in[1]~corein ; combout          ;
+; |Display_single|D_in[2]  ; |Display_single|D_in[2]~corein ; combout          ;
+; |Display_single|D_in[3]  ; |Display_single|D_in[3]~corein ; combout          ;
 +--------------------------+--------------------------------+------------------+
 
 
@@ -145,13 +145,13 @@ The following table displays output ports that do not toggle to 0 during simulat
 +--------------------------+--------------------------------+------------------+
 ; Node Name                ; Output Port Name               ; Output Port Type ;
 +--------------------------+--------------------------------+------------------+
-; |Display_single|D_hex~2  ; |Display_single|D_hex~2        ; combout          ;
-; |Display_single|D_hex~7  ; |Display_single|D_hex~7        ; combout          ;
-; |Display_single|D_hex~15 ; |Display_single|D_hex~15       ; combout          ;
-; |Display_single|D_hex~54 ; |Display_single|D_hex~54       ; combout          ;
-; |Display_single|D_hex~24 ; |Display_single|D_hex~24       ; combout          ;
-; |Display_single|D_hex~33 ; |Display_single|D_hex~33       ; combout          ;
-; |Display_single|D_hex~55 ; |Display_single|D_hex~55       ; combout          ;
+; |Display_single|D_hex~42 ; |Display_single|D_hex~42       ; combout          ;
+; |Display_single|D_hex~43 ; |Display_single|D_hex~43       ; combout          ;
+; |Display_single|D_hex~44 ; |Display_single|D_hex~44       ; combout          ;
+; |Display_single|D_hex~45 ; |Display_single|D_hex~45       ; combout          ;
+; |Display_single|D_hex~46 ; |Display_single|D_hex~46       ; combout          ;
+; |Display_single|D_hex~47 ; |Display_single|D_hex~47       ; combout          ;
+; |Display_single|D_hex~48 ; |Display_single|D_hex~48       ; combout          ;
 ; |Display_single|D_hex[0] ; |Display_single|D_hex[0]       ; padio            ;
 ; |Display_single|D_hex[1] ; |Display_single|D_hex[1]       ; padio            ;
 ; |Display_single|D_hex[2] ; |Display_single|D_hex[2]       ; padio            ;
@@ -159,10 +159,10 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Display_single|D_hex[4] ; |Display_single|D_hex[4]       ; padio            ;
 ; |Display_single|D_hex[5] ; |Display_single|D_hex[5]       ; padio            ;
 ; |Display_single|D_hex[6] ; |Display_single|D_hex[6]       ; padio            ;
-; |Display_single|D_in[3]  ; |Display_single|D_in[3]~corein ; combout          ;
-; |Display_single|D_in[2]  ; |Display_single|D_in[2]~corein ; combout          ;
-; |Display_single|D_in[1]  ; |Display_single|D_in[1]~corein ; combout          ;
 ; |Display_single|D_in[0]  ; |Display_single|D_in[0]~corein ; combout          ;
+; |Display_single|D_in[1]  ; |Display_single|D_in[1]~corein ; combout          ;
+; |Display_single|D_in[2]  ; |Display_single|D_in[2]~corein ; combout          ;
+; |Display_single|D_in[3]  ; |Display_single|D_in[3]~corein ; combout          ;
 +--------------------------+--------------------------------+------------------+
 
 
@@ -179,7 +179,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Tue Dec 04 14:49:14 2018
+    Info: Processing started: Wed Dec 05 18:29:55 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Display_single -c Display_single
 Info: Using vector source file "F:/study/数字电路/实验/lab2/Display_single/Display_single.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
@@ -188,8 +188,8 @@ Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is       0.00 %
 Info: Number of transitions in simulation is 0
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 185 megabytes
-    Info: Processing ended: Tue Dec 04 14:49:14 2018
+    Info: Peak virtual memory: 186 megabytes
+    Info: Processing ended: Wed Dec 05 18:29:55 2018
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
