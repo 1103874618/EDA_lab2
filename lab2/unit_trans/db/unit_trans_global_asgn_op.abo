@@ -30,7 +30,7 @@ Chip Device Options:
 ****************************
 
 - ATOM ------------------------
-	ATOM_NAME: m~11 -- NON-UNIQUE
+	ATOM_NAME: m~12 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 8
 	Atom Type: cycloneii_lcell_comb
@@ -42,7 +42,7 @@ Chip Device Options:
 		3: [DATAD]	  u_in[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	m~11	LIT INDEX 0 FANOUTS 1
+		0: [COMBOUT]	m~12	LIT INDEX 0 FANOUTS 1
 		1: NONE
 
 	PARAMETER LIST:
@@ -51,7 +51,7 @@ Chip Device Options:
 
 
 - ATOM ------------------------
-	ATOM_NAME: m~12 -- NON-UNIQUE
+	ATOM_NAME: m~13 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 9
 	Atom Type: cycloneii_lcell_comb
@@ -63,12 +63,33 @@ Chip Device Options:
 		3: [DATAD]	  u_in[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
 		4: NO ITERM
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	m~12	LIT INDEX 0 FANOUTS 1
+		0: [COMBOUT]	m~13	LIT INDEX 0 FANOUTS 1
 		1: NONE
 
 	PARAMETER LIST:
 		sum_lutc_input                 = datac
 		lut_mask                       = 88aa
+
+
+- ATOM ------------------------
+	ATOM_NAME: m~11 -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 10
+	Atom Type: cycloneii_lcell_comb
+
+	INPUTS (Driven By):
+		0: [DATAA]	  u_in[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: [DATAC]	  u_in[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		3: [DATAD]	  u_in[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		4: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	m~11	LIT INDEX 0 FANOUTS 1
+		1: NONE
+
+	PARAMETER LIST:
+		sum_lutc_input                 = datac
+		lut_mask                       = 000a
 
 
 - ATOM ------------------------
@@ -133,7 +154,7 @@ Chip Device Options:
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  m~11	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  m~12	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -188,7 +209,7 @@ Chip Device Options:
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  m~12	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  m~13	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -243,7 +264,7 @@ Chip Device Options:
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  GND	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  m~11	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -365,7 +386,7 @@ Chip Device Options:
 		9: NO ITERM
 		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	u_in[2]	LIT INDEX 0 FANOUTS 2
+		0: [COMBOUT]	u_in[2]	LIT INDEX 0 FANOUTS 3
 		1: NONE
 		2: NONE
 		3: NONE
@@ -420,7 +441,7 @@ Chip Device Options:
 		9: NO ITERM
 		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	u_in[1]	LIT INDEX 0 FANOUTS 2
+		0: [COMBOUT]	u_in[1]	LIT INDEX 0 FANOUTS 3
 		1: NONE
 		2: NONE
 		3: NONE
@@ -475,7 +496,7 @@ Chip Device Options:
 		9: NO ITERM
 		10: [PADIO]	DISCONNECTED
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	u_in[3]	LIT INDEX 0 FANOUTS 2
+		0: [COMBOUT]	u_in[3]	LIT INDEX 0 FANOUTS 3
 		1: NONE
 		2: NONE
 		3: NONE

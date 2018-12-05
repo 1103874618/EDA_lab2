@@ -1,18 +1,19 @@
 |unit_trans
 u_in[0] => m[0].DATAIN
-u_in[1] => m~7.IN0
+u_in[1] => m~6.IN0
 u_in[1] => m~5.IN0
 u_in[1] => m~2.IN0
 u_in[1] => m~0.IN1
-u_in[2] => m~9.IN0
+u_in[1] => m~11.IN0
+u_in[2] => m~8.IN0
 u_in[2] => m~4.IN1
-u_in[2] => m~6.IN1
-u_in[3] => m~6.IN0
+u_in[2] => m~10.IN1
+u_in[3] => m~10.IN0
 u_in[3] => m~4.IN0
 u_in[3] => m~0.IN0
 m[0] <= u_in[0].DB_MAX_OUTPUT_PORT_TYPE
 m[1] <= m~3.DB_MAX_OUTPUT_PORT_TYPE
-m[2] <= m~10.DB_MAX_OUTPUT_PORT_TYPE
-m[3] <= <GND>
+m[2] <= m~9.DB_MAX_OUTPUT_PORT_TYPE
+m[3] <= m~11.DB_MAX_OUTPUT_PORT_TYPE
 
 

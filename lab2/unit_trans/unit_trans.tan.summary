@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.537 ns
-From           : u_in[3]
-To             : m[1]
+Actual Time    : 12.050 ns
+From           : u_in[1]
+To             : m[2]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0

@@ -47,6 +47,6 @@ m(2)<= (((a AND b AND NOT c) OR (a AND NOT b AND b)) AND '0')  OR
        ((a AND b AND c) AND '1') OR
        (NOT((a AND b) OR (a AND NOT b AND c)) AND b);
 
-m(3)<= '0';
+m(3)<=((a AND NOT b AND NOT c) AND '1') ;
 
 END arch_u;
