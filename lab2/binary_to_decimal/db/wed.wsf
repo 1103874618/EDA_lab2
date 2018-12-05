@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
+VECTOR("F:/study/数字电路/实验/lab2/binary_to_decimal/db/binary_to_decimal.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 261768;
+		ZEND = 211213;
 		NUMERATOR = 844;
-		DENOMINATOR = 261768;
+		DENOMINATOR = 211213;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -38,7 +38,7 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "u_in";
+		SIGNAL = "b_in";
 		INDEX = 0;
 		FORMAT = T;
 		SCALE = 1;
@@ -46,7 +46,7 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "u_in[3]";
+		SIGNAL = "b_in[3]";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -54,7 +54,7 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "u_in[2]";
+		SIGNAL = "b_in[2]";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -62,7 +62,7 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "u_in[1]";
+		SIGNAL = "b_in[1]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -70,7 +70,7 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "u_in[0]";
+		SIGNAL = "b_in[0]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -78,23 +78,23 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "m";
+		SIGNAL = "b_z";
 		INDEX = 5;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "m[3]";
-		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "m[2]";
+		SIGNAL = "b_m";
+		INDEX = 6;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "b_m[3]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -102,7 +102,7 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "m[1]";
+		SIGNAL = "b_m[2]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -110,107 +110,16 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "m[0]";
+		SIGNAL = "b_m[1]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
-}
-
-VECTOR("F:/study/数字电路/实验/lab2/unit_trans/unit_trans.vwf")
-{
-	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 1000000;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
-		TOP_INDEX = 0;
-	}
-	CLOCK{
-		PERIOD = 10000;
-		OFFSET = 0;
-		DUTY_CYCLE = 50;
-	}
-	RANDOM_VALUE{
-		INTERVAL_TYPE = HALF_GRID;
-	}
 	LINE{
-		SIGNAL = "u_in";
-		INDEX = 0;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "u_in[3]";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "u_in[2]";
-		INDEX = 2;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "u_in[1]";
-		INDEX = 3;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "u_in[0]";
-		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "m";
-		INDEX = 5;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "m[3]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "m[2]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "m[1]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "m[0]";
-		INDEX = 9;
+		SIGNAL = "b_m[0]";
+		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

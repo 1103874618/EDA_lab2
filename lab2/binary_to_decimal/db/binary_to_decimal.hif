@@ -1,0 +1,138 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+..|display_single|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+binary_to_decimal
+# storage
+db|binary_to_decimal.(0).cnf
+db|binary_to_decimal.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+binary_to_decimal.vhd
+d4103bcc85ebb97df9dbb9586749bba
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+e:|quatus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+unit_trans
+# storage
+db|binary_to_decimal.(1).cnf
+db|binary_to_decimal.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|unit_trans|unit_trans.vhd
+27641ddc912f465aa73d5395939fe6f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(u_in)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(m)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+unit_trans:unit
+}
+# lmf
+e:|quatus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+comp
+# storage
+db|binary_to_decimal.(2).cnf
+db|binary_to_decimal.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|compare|compare.vhd
+55b71a583c917f5670bdd9c6ebcd977
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(c_in)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+comp:tens_digit
+}
+# lmf
+e:|quatus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+
