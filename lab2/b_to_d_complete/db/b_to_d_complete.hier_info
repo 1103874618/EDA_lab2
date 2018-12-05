@@ -1,0 +1,148 @@
+|b_to_d_complete
+SW[0] => binary_to_decimal:b_to_d.b_in[0]
+SW[1] => binary_to_decimal:b_to_d.b_in[1]
+SW[2] => binary_to_decimal:b_to_d.b_in[2]
+SW[3] => binary_to_decimal:b_to_d.b_in[3]
+HEX0[0] <= Display_single:unit_b.D_hex[0]
+HEX0[1] <= Display_single:unit_b.D_hex[1]
+HEX0[2] <= Display_single:unit_b.D_hex[2]
+HEX0[3] <= Display_single:unit_b.D_hex[3]
+HEX0[4] <= Display_single:unit_b.D_hex[4]
+HEX0[5] <= Display_single:unit_b.D_hex[5]
+HEX0[6] <= Display_single:unit_b.D_hex[6]
+HEX1[0] <= Display_single:tens_digits_b.D_hex[0]
+HEX1[1] <= Display_single:tens_digits_b.D_hex[1]
+HEX1[2] <= Display_single:tens_digits_b.D_hex[2]
+HEX1[3] <= Display_single:tens_digits_b.D_hex[3]
+HEX1[4] <= Display_single:tens_digits_b.D_hex[4]
+HEX1[5] <= Display_single:tens_digits_b.D_hex[5]
+HEX1[6] <= Display_single:tens_digits_b.D_hex[6]
+
+
+|b_to_d_complete|binary_to_decimal:b_to_d
+b_in[0] => comp:tens_digit.c_in[0]
+b_in[0] => unit_trans:unit.u_in[0]
+b_in[1] => comp:tens_digit.c_in[1]
+b_in[1] => unit_trans:unit.u_in[1]
+b_in[2] => comp:tens_digit.c_in[2]
+b_in[2] => unit_trans:unit.u_in[2]
+b_in[3] => comp:tens_digit.c_in[3]
+b_in[3] => unit_trans:unit.u_in[3]
+b_m[0] <= unit_trans:unit.m[0]
+b_m[1] <= unit_trans:unit.m[1]
+b_m[2] <= unit_trans:unit.m[2]
+b_m[3] <= unit_trans:unit.m[3]
+b_z <= comp:tens_digit.z
+
+
+|b_to_d_complete|binary_to_decimal:b_to_d|unit_trans:unit
+u_in[0] => m[0].DATAIN
+u_in[1] => m~6.IN0
+u_in[1] => m~5.IN0
+u_in[1] => m~2.IN0
+u_in[1] => m~0.IN1
+u_in[1] => m~11.IN0
+u_in[2] => m~8.IN0
+u_in[2] => m~4.IN1
+u_in[2] => m~10.IN1
+u_in[3] => m~10.IN0
+u_in[3] => m~4.IN0
+u_in[3] => m~0.IN0
+m[0] <= u_in[0].DB_MAX_OUTPUT_PORT_TYPE
+m[1] <= m~3.DB_MAX_OUTPUT_PORT_TYPE
+m[2] <= m~9.DB_MAX_OUTPUT_PORT_TYPE
+m[3] <= m~11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|b_to_d_complete|binary_to_decimal:b_to_d|comp:tens_digit
+c_in[0] => ~NO_FANOUT~
+c_in[1] => z~2.IN1
+c_in[2] => z~0.IN1
+c_in[2] => z~1.IN1
+c_in[3] => z~1.IN0
+c_in[3] => z~0.IN0
+z <= z~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|b_to_d_complete|Display_single:tens_digits_b
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|b_to_d_complete|Display_single:unit_b
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+

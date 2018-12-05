@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Display_single
-Wed Dec 05 18:29:08 2018
+Wed Dec 05 20:35:55 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 05 18:29:08 2018    ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 05 20:35:55 2018    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; Display_single                           ;
 ; Top-level Entity Name              ; Display_single                           ;
@@ -200,7 +200,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Wed Dec 05 18:29:01 2018
+    Info: Processing started: Wed Dec 05 20:35:54 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Display_single -c Display_single
 Info: Found 2 design units, including 1 entities, in source file Display_single.vhd
     Info: Found design unit 1: Display_single-D_arch
@@ -212,8 +212,8 @@ Info: Implemented 18 device resources after synthesis - the final resource count
     Info: Implemented 7 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 268 megabytes
-    Info: Processing ended: Wed Dec 05 18:29:08 2018
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Wed Dec 05 20:35:55 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

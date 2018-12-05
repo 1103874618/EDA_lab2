@@ -19,9 +19,9 @@ b<=D_in(2);
 c<=D_in(1);
 d<=D_in(0);
 D_hex(0)<= NOT((NOT a AND c) OR 
-           (NOT(a OR c OR d)) OR
+           (NOT(a OR b OR c OR d)) OR
            ((NOT a) AND b AND (NOT c) AND d) OR
-           (a AND (NOT b) AND (NOT c) AND d));--ok
+           (a AND (NOT b) AND (NOT c)));
 
 D_hex(1)<= NOT((NOT(a OR c OR d))OR
            (NOT a AND NOT b AND c) OR
