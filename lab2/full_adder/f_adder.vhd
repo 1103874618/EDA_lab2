@@ -18,7 +18,8 @@ SIGNAL f_s_out :STD_LOGIC;
 BEGIN
 f_s_out <= (f_a XOR f_b) XOR f_ci;
 f_co<= ((f_a AND f_b AND f_ci) AND '1') OR
-       (NOT(f_a AND f_b AND f_ci) AND (NOT f_s_out));
+       ((NOT f_a AND NOT f_b AND NOT f_ci) AND '0') OR
+       ((NOT (f_a AND f_b AND f_ci) AND NOT(NOT f_a AND NOT f_b AND NOT f_ci)) AND (NOT f_s_out));
 f_s<=f_s_out;
 
 END arch_f;

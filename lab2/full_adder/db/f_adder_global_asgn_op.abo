@@ -30,7 +30,7 @@ Chip Device Options:
 ****************************
 
 - ATOM ------------------------
-	ATOM_NAME: f_co~3 -- NON-UNIQUE
+	ATOM_NAME: f_co~7 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 5
 	Atom Type: cycloneii_lcell_comb
@@ -42,16 +42,16 @@ Chip Device Options:
 		3: NO ITERM
 		4: NO ITERM
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	f_co~3	LIT INDEX 0 FANOUTS 1
+		0: [COMBOUT]	f_co~7	LIT INDEX 0 FANOUTS 1
 		1: NONE
 
 	PARAMETER LIST:
 		sum_lutc_input                 = datac
-		lut_mask                       = e9e9
+		lut_mask                       = e8e8
 
 
 - ATOM ------------------------
-	ATOM_NAME: f_co~4 -- NON-UNIQUE
+	ATOM_NAME: f_s_out~2 -- NON-UNIQUE
 	Atom Hier Name: 
 	Atom Id: 6
 	Atom Type: cycloneii_lcell_comb
@@ -63,7 +63,7 @@ Chip Device Options:
 		3: NO ITERM
 		4: NO ITERM
 	OUTPUTS (Int. Connections):
-		0: [COMBOUT]	f_co~4	LIT INDEX 0 FANOUTS 1
+		0: [COMBOUT]	f_s_out~2	LIT INDEX 0 FANOUTS 1
 		1: NONE
 
 	PARAMETER LIST:
@@ -78,7 +78,7 @@ Chip Device Options:
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  f_co~3	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  f_co~7	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM
@@ -133,7 +133,7 @@ Chip Device Options:
 	Atom Type: cycloneii_io
 
 	INPUTS (Driven By):
-		0: [DATAIN]	  f_co~4	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		0: [DATAIN]	  f_s_out~2	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
 		1: NO ITERM
 		2: NO ITERM
 		3: NO ITERM

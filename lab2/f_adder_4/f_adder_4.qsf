@@ -47,3 +47,10 @@ set_global_assignment -name SEARCH_PATH "f:\\study\\数字电路\\实验\\lab2\\displa
 set_global_assignment -name VHDL_FILE ../full_adder/f_adder.vhd
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VHDL_FILE f_adder_4.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name VECTOR_WAVEFORM_FILE f_adder_4.vwf

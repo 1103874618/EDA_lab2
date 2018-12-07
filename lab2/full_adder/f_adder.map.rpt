@@ -1,5 +1,5 @@
 Analysis & Synthesis report for f_adder
-Fri Dec 07 09:17:59 2018
+Fri Dec 07 09:52:00 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 07 09:17:59 2018    ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 07 09:52:00 2018    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; f_adder                                  ;
 ; Top-level Entity Name              ; f_adder                                  ;
@@ -200,7 +200,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Fri Dec 07 09:17:58 2018
+    Info: Processing started: Fri Dec 07 09:51:58 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off f_adder -c f_adder
 Info: Found 2 design units, including 1 entities, in source file f_adder.vhd
     Info: Found design unit 1: f_adder-arch_f
@@ -212,8 +212,8 @@ Info: Implemented 7 device resources after synthesis - the final resource count 
     Info: Implemented 2 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 268 megabytes
-    Info: Processing ended: Fri Dec 07 09:17:59 2018
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri Dec 07 09:52:00 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
