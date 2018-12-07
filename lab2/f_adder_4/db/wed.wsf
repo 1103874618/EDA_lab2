@@ -179,10 +179,10 @@ VECTOR("F:/study/数字电路/实验/lab2/f_adder_4/db/f_adder_4.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 110950;
+		ZEND = 113230;
 		NUMERATOR = 827;
 		DENOMINATOR = 110950;
-		TOP_INDEX = 0;
+		TOP_INDEX = 6;
 	}
 	CLOCK{
 		PERIOD = 10000;

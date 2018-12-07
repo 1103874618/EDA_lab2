@@ -1,5 +1,5 @@
 Simulator report for f_adder_4
-Fri Dec 07 09:54:36 2018
+Fri Dec 07 10:01:40 2018
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -187,7 +187,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Fri Dec 07 09:54:35 2018
+    Info: Processing started: Fri Dec 07 10:01:40 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off f_adder_4 -c f_adder_4
 Info: Using vector source file "F:/study/数字电路/实验/lab2/f_adder_4/f_adder_4.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
@@ -197,8 +197,8 @@ Info: Simulation coverage is       0.00 %
 Info: Number of transitions in simulation is 0
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 185 megabytes
-    Info: Processing ended: Fri Dec 07 09:54:36 2018
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri Dec 07 10:01:40 2018
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

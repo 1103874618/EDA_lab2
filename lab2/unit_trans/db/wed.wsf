@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
+VECTOR("F:/study/数字电路/实验/lab2/unit_trans/unit_trans.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 261768;
-		NUMERATOR = 844;
-		DENOMINATOR = 261768;
+		ZEND = 1000000;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -119,13 +119,13 @@ VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 	}
 }
 
-VECTOR("F:/study/数字电路/实验/lab2/unit_trans/unit_trans.vwf")
+VECTOR("F:/study/数字电路/实验/lab2/unit_trans/db/unit_trans.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 1000000;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
+		ZEND = 261768;
+		NUMERATOR = 844;
+		DENOMINATOR = 261768;
 		TOP_INDEX = 0;
 	}
 	CLOCK{

@@ -50,6 +50,7 @@ END COMPONENT;
 
 SIGNAL ci1,ci2,ci3:STD_LOGIC;
 BEGIN
+
 u0:f_adder PORT MAP (f_a=>f_4_a(0),f_b=> f_4_b(0),f_co=>ci1,f_ci=>f_4_ci,f_s=>f_4_s(0));
 u1:f_adder PORT MAP (f_a=>f_4_a(1),f_b=>f_4_b(1),f_co=>ci2,f_ci=>ci1,f_s=>f_4_s(1));
 u2:f_adder PORT MAP (f_a=>f_4_a(2),f_b=>f_4_b(2),f_co=>ci3,f_ci=>ci2,f_s=>f_4_s(2));

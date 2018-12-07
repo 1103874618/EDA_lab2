@@ -1,0 +1,181 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+unit_trans
+# storage
+db|bit5_unit_trans.(1).cnf
+db|bit5_unit_trans.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|unit_trans|unit_trans.vhd
+e978e216da6cb39e279a48c51369fa
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(u_in)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(m)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+unit_trans:u1
+}
+# lmf
+e:|quatus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+bit5_unit_trans
+# storage
+db|bit5_unit_trans.(0).cnf
+db|bit5_unit_trans.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bit5_unit_trans.vhd
+369f3aafbaed777de18828da1b4abfb8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+e:|quatus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+f_adder_4
+# storage
+db|bit5_unit_trans.(2).cnf
+db|bit5_unit_trans.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|f_adder_4|f_adder_4.vhd
+bc9177d6c769c47bc20e41dcba491d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(f_4_a)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(f_4_b)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(f_4_s)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+f_adder_4:m_plus
+}
+# lmf
+e:|quatus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+f_adder
+# storage
+db|bit5_unit_trans.(3).cnf
+db|bit5_unit_trans.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|full_adder|f_adder.vhd
+8c92e78741ceabcecf929f8e253b29cb
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+f_adder_4:m_plus|f_adder:u0
+f_adder_4:m_plus|f_adder:u1
+f_adder_4:m_plus|f_adder:u2
+f_adder_4:m_plus|f_adder:u3
+}
+# lmf
+e:|quatus|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

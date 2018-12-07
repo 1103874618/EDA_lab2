@@ -1,0 +1,111 @@
+|bit5_unit_trans
+b5_in[0] => unit_trans:u1.u_in[0]
+b5_in[1] => unit_trans:u1.u_in[1]
+b5_in[2] => unit_trans:u1.u_in[2]
+b5_in[3] => unit_trans:u1.u_in[3]
+b5_in[4] => b5_out~3.IN1
+b5_in[4] => b5_out~2.IN1
+b5_in[4] => b5_out~1.IN1
+b5_in[4] => b5_out~0.IN1
+b5_in[4] => b5_out~4.IN1
+b5_in[4] => b5_out~5.IN1
+b5_in[4] => b5_out~6.IN1
+b5_in[4] => b5_out~7.IN1
+b5_out[0] <= b5_out~8.DB_MAX_OUTPUT_PORT_TYPE
+b5_out[1] <= b5_out~9.DB_MAX_OUTPUT_PORT_TYPE
+b5_out[2] <= b5_out~10.DB_MAX_OUTPUT_PORT_TYPE
+b5_out[3] <= b5_out~11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_unit_trans|unit_trans:u1
+u_in[0] => m[0].DATAIN
+u_in[1] => m~6.IN0
+u_in[1] => m~5.IN0
+u_in[1] => m~2.IN0
+u_in[1] => m~0.IN1
+u_in[1] => m~11.IN0
+u_in[2] => m~8.IN0
+u_in[2] => m~4.IN1
+u_in[2] => m~10.IN1
+u_in[3] => m~10.IN0
+u_in[3] => m~4.IN0
+u_in[3] => m~0.IN0
+m[0] <= u_in[0].DB_MAX_OUTPUT_PORT_TYPE
+m[1] <= m~3.DB_MAX_OUTPUT_PORT_TYPE
+m[2] <= m~9.DB_MAX_OUTPUT_PORT_TYPE
+m[3] <= m~11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_unit_trans|f_adder_4:m_plus
+f_4_a[0] => f_adder:u0.f_a
+f_4_a[1] => f_adder:u1.f_a
+f_4_a[2] => f_adder:u2.f_a
+f_4_a[3] => f_adder:u3.f_a
+f_4_b[0] => f_adder:u0.f_b
+f_4_b[1] => f_adder:u1.f_b
+f_4_b[2] => f_adder:u2.f_b
+f_4_b[3] => f_adder:u3.f_b
+f_4_co <= f_adder:u3.f_co
+f_4_ci => f_adder:u0.f_ci
+f_4_s[0] <= f_adder:u0.f_s
+f_4_s[1] <= f_adder:u1.f_s
+f_4_s[2] <= f_adder:u2.f_s
+f_4_s[3] <= f_adder:u3.f_s
+
+
+|bit5_unit_trans|f_adder_4:m_plus|f_adder:u0
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_unit_trans|f_adder_4:m_plus|f_adder:u1
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_unit_trans|f_adder_4:m_plus|f_adder:u2
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_unit_trans|f_adder_4:m_plus|f_adder:u3
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
