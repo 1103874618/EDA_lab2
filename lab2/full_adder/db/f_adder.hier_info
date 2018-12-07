@@ -1,0 +1,11 @@
+|f_adder
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_co <= f_co~3.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
