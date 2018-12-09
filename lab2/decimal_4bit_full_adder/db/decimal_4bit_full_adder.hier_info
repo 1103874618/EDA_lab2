@@ -1,0 +1,146 @@
+|decimal_4bit_full_adder
+f_4_a[0] => f_adder:u0.f_a
+f_4_a[1] => f_adder:u1.f_a
+f_4_a[2] => f_adder:u2.f_a
+f_4_a[3] => f_adder:u3.f_a
+f_4_b[0] => f_adder:u0.f_b
+f_4_b[1] => f_adder:u1.f_b
+f_4_b[2] => f_adder:u2.f_b
+f_4_b[3] => f_adder:u3.f_b
+f_4_co <= f_co_signal~3.DB_MAX_OUTPUT_PORT_TYPE
+f_4_ci => f_adder:u0.f_ci
+f_4_s[0] <= f_4_s~8.DB_MAX_OUTPUT_PORT_TYPE
+f_4_s[1] <= f_4_s~9.DB_MAX_OUTPUT_PORT_TYPE
+f_4_s[2] <= f_4_s~10.DB_MAX_OUTPUT_PORT_TYPE
+f_4_s[3] <= f_4_s~11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decimal_4bit_full_adder|f_adder:u0
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decimal_4bit_full_adder|f_adder:u1
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decimal_4bit_full_adder|f_adder:u2
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decimal_4bit_full_adder|f_adder:u3
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decimal_4bit_full_adder|f_adder_4:u5
+f_4_a[0] => f_adder:u0.f_a
+f_4_a[1] => f_adder:u1.f_a
+f_4_a[2] => f_adder:u2.f_a
+f_4_a[3] => f_adder:u3.f_a
+f_4_b[0] => f_adder:u0.f_b
+f_4_b[1] => f_adder:u1.f_b
+f_4_b[2] => f_adder:u2.f_b
+f_4_b[3] => f_adder:u3.f_b
+f_4_co <= f_adder:u3.f_co
+f_4_ci => f_adder:u0.f_ci
+f_4_s[0] <= f_adder:u0.f_s
+f_4_s[1] <= f_adder:u1.f_s
+f_4_s[2] <= f_adder:u2.f_s
+f_4_s[3] <= f_adder:u3.f_s
+
+
+|decimal_4bit_full_adder|f_adder_4:u5|f_adder:u0
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decimal_4bit_full_adder|f_adder_4:u5|f_adder:u1
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decimal_4bit_full_adder|f_adder_4:u5|f_adder:u2
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|decimal_4bit_full_adder|f_adder_4:u5|f_adder:u3
+f_a => f_co~0.IN0
+f_a => f_s_out~0.IN0
+f_a => f_co~2.IN0
+f_b => f_co~0.IN1
+f_b => f_s_out~0.IN1
+f_b => f_co~2.IN1
+f_ci => f_co~1.IN1
+f_ci => f_s_out~1.IN0
+f_ci => f_co~3.IN0
+f_co <= f_co~6.DB_MAX_OUTPUT_PORT_TYPE
+f_s <= f_s_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
