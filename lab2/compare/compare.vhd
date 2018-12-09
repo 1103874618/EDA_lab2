@@ -20,7 +20,7 @@ BEGIN
   --       ((c_in(3) XOR '1') OR (c_in(2) XOR '0') OR (c_in(1) XOR '1') OR (c_in(0) XOR '1')) 
   --       );
 
-z<= (c_in(3) AND c_in(2)) OR (c_in(3) AND (NOT c_in(2))AND c_in(1));
+z<= (c_in(3) AND c_in(2)) OR (c_in(3) AND (NOT c_in(2))AND c_in(1));--判断十位是否为1
 
 END arch_com;
 
