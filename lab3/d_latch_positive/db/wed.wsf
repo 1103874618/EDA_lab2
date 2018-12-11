@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("F:/study/数字电路/实验/lab3/ms_d_latch/db/ms_d_latch.sim.cvwf")
+VECTOR("F:/study/数字电路/实验/lab3/d_latch_positive/db/d_latch_positive.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 121930;
+		ZEND = 98381;
 		NUMERATOR = 844;
-		DENOMINATOR = 121930;
+		DENOMINATOR = 98381;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -61,17 +61,9 @@ VECTOR("F:/study/数字电路/实验/lab3/ms_d_latch/db/ms_d_latch.sim.cvwf")
 		VISIBLE = Y;
 		FLAG = N;
 	}
-	LINE{
-		SIGNAL = "nq";
-		INDEX = 3;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
 }
 
-VECTOR("F:/study/数字电路/实验/lab3/d_latch/ms_d_latch.vwf")
+VECTOR("F:/study/数字电路/实验/lab3/d_latch_positive/d_latch_positive.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
