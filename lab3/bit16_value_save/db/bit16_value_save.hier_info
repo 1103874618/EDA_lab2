@@ -1,0 +1,675 @@
+|bit16_value_save
+key0 => display_in_b_deal[15].IN1
+key0 => display_in_b_deal[14].IN1
+key0 => display_in_b_deal[13].IN1
+key0 => display_in_b_deal[12].IN1
+key0 => display_in_b_deal[11].IN1
+key0 => display_in_b_deal[10].IN1
+key0 => display_in_b_deal[9].IN1
+key0 => display_in_b_deal[8].IN1
+key0 => display_in_b_deal[7].IN1
+key0 => display_in_b_deal[6].IN1
+key0 => display_in_b_deal[5].IN1
+key0 => display_in_b_deal[4].IN1
+key0 => display_in_b_deal[3].IN1
+key0 => display_in_b_deal[2].IN1
+key0 => display_in_b_deal[1].IN1
+key0 => display_in_b_deal[0].IN1
+key0 => display_in_a_deal[15].IN1
+key0 => display_in_a_deal[14].IN1
+key0 => display_in_a_deal[13].IN1
+key0 => display_in_a_deal[12].IN1
+key0 => display_in_a_deal[11].IN1
+key0 => display_in_a_deal[10].IN1
+key0 => display_in_a_deal[9].IN1
+key0 => display_in_a_deal[8].IN1
+key0 => display_in_a_deal[7].IN1
+key0 => display_in_a_deal[6].IN1
+key0 => display_in_a_deal[5].IN1
+key0 => display_in_a_deal[4].IN1
+key0 => display_in_a_deal[3].IN1
+key0 => display_in_a_deal[2].IN1
+key0 => display_in_a_deal[1].IN1
+key0 => display_in_a_deal[0].IN1
+key1 => d_latch_pro:ua15.clk
+key1 => d_latch_pro:ua14.clk
+key1 => d_latch_pro:ua13.clk
+key1 => d_latch_pro:ua12.clk
+key1 => d_latch_pro:ua11.clk
+key1 => d_latch_pro:ua10.clk
+key1 => d_latch_pro:ua9.clk
+key1 => d_latch_pro:ua8.clk
+key1 => d_latch_pro:ua7.clk
+key1 => d_latch_pro:ua6.clk
+key1 => d_latch_pro:ua5.clk
+key1 => d_latch_pro:ua4.clk
+key1 => d_latch_pro:ua3.clk
+key1 => d_latch_pro:ua2.clk
+key1 => d_latch_pro:ua1.clk
+key1 => d_latch_pro:ua0.clk
+key1 => d_latch_pro:ub0.clk
+key1 => d_latch_pro:ub1.clk
+key1 => d_latch_pro:ub2.clk
+key1 => d_latch_pro:ub3.clk
+key1 => d_latch_pro:ub4.clk
+key1 => d_latch_pro:ub5.clk
+key1 => d_latch_pro:ub6.clk
+key1 => d_latch_pro:ub7.clk
+key1 => d_latch_pro:ub8.clk
+key1 => d_latch_pro:ub9.clk
+key1 => d_latch_pro:ub10.clk
+key1 => d_latch_pro:ub11.clk
+key1 => d_latch_pro:ub12.clk
+key1 => d_latch_pro:ub13.clk
+key1 => d_latch_pro:ub14.clk
+key1 => d_latch_pro:ub15.clk
+sw_in[0] => d_latch_pro:ub0.d
+sw_in[0] => d_latch_pro:ua0.d
+sw_in[1] => d_latch_pro:ub1.d
+sw_in[1] => d_latch_pro:ua1.d
+sw_in[2] => d_latch_pro:ub2.d
+sw_in[2] => d_latch_pro:ua2.d
+sw_in[3] => d_latch_pro:ub3.d
+sw_in[3] => d_latch_pro:ua3.d
+sw_in[4] => d_latch_pro:ub4.d
+sw_in[4] => d_latch_pro:ua4.d
+sw_in[5] => d_latch_pro:ub5.d
+sw_in[5] => d_latch_pro:ua5.d
+sw_in[6] => d_latch_pro:ub6.d
+sw_in[6] => d_latch_pro:ua6.d
+sw_in[7] => d_latch_pro:ub7.d
+sw_in[7] => d_latch_pro:ua7.d
+sw_in[8] => d_latch_pro:ub8.d
+sw_in[8] => d_latch_pro:ua8.d
+sw_in[9] => d_latch_pro:ub9.d
+sw_in[9] => d_latch_pro:ua9.d
+sw_in[10] => d_latch_pro:ub10.d
+sw_in[10] => d_latch_pro:ua10.d
+sw_in[11] => d_latch_pro:ub11.d
+sw_in[11] => d_latch_pro:ua11.d
+sw_in[12] => d_latch_pro:ub12.d
+sw_in[12] => d_latch_pro:ua12.d
+sw_in[13] => d_latch_pro:ub13.d
+sw_in[13] => d_latch_pro:ua13.d
+sw_in[14] => d_latch_pro:ub14.d
+sw_in[14] => d_latch_pro:ua14.d
+sw_in[15] => d_latch_pro:ub15.d
+sw_in[15] => d_latch_pro:ua15.d
+hexout0[0] <= Display_single:d1.D_hex[0]
+hexout0[1] <= Display_single:d1.D_hex[1]
+hexout0[2] <= Display_single:d1.D_hex[2]
+hexout0[3] <= Display_single:d1.D_hex[3]
+hexout0[4] <= Display_single:d1.D_hex[4]
+hexout0[5] <= Display_single:d1.D_hex[5]
+hexout0[6] <= Display_single:d1.D_hex[6]
+hexout1[0] <= Display_single:d2.D_hex[0]
+hexout1[1] <= Display_single:d2.D_hex[1]
+hexout1[2] <= Display_single:d2.D_hex[2]
+hexout1[3] <= Display_single:d2.D_hex[3]
+hexout1[4] <= Display_single:d2.D_hex[4]
+hexout1[5] <= Display_single:d2.D_hex[5]
+hexout1[6] <= Display_single:d2.D_hex[6]
+hexout2[0] <= Display_single:d3.D_hex[0]
+hexout2[1] <= Display_single:d3.D_hex[1]
+hexout2[2] <= Display_single:d3.D_hex[2]
+hexout2[3] <= Display_single:d3.D_hex[3]
+hexout2[4] <= Display_single:d3.D_hex[4]
+hexout2[5] <= Display_single:d3.D_hex[5]
+hexout2[6] <= Display_single:d3.D_hex[6]
+hexout3[0] <= Display_single:d4.D_hex[0]
+hexout3[1] <= Display_single:d4.D_hex[1]
+hexout3[2] <= Display_single:d4.D_hex[2]
+hexout3[3] <= Display_single:d4.D_hex[3]
+hexout3[4] <= Display_single:d4.D_hex[4]
+hexout3[5] <= Display_single:d4.D_hex[5]
+hexout3[6] <= Display_single:d4.D_hex[6]
+hexout4[0] <= Display_single:d5.D_hex[0]
+hexout4[1] <= Display_single:d5.D_hex[1]
+hexout4[2] <= Display_single:d5.D_hex[2]
+hexout4[3] <= Display_single:d5.D_hex[3]
+hexout4[4] <= Display_single:d5.D_hex[4]
+hexout4[5] <= Display_single:d5.D_hex[5]
+hexout4[6] <= Display_single:d5.D_hex[6]
+hexout5[0] <= Display_single:d6.D_hex[0]
+hexout5[1] <= Display_single:d6.D_hex[1]
+hexout5[2] <= Display_single:d6.D_hex[2]
+hexout5[3] <= Display_single:d6.D_hex[3]
+hexout5[4] <= Display_single:d6.D_hex[4]
+hexout5[5] <= Display_single:d6.D_hex[5]
+hexout5[6] <= Display_single:d6.D_hex[6]
+hexout6[0] <= Display_single:d7.D_hex[0]
+hexout6[1] <= Display_single:d7.D_hex[1]
+hexout6[2] <= Display_single:d7.D_hex[2]
+hexout6[3] <= Display_single:d7.D_hex[3]
+hexout6[4] <= Display_single:d7.D_hex[4]
+hexout6[5] <= Display_single:d7.D_hex[5]
+hexout6[6] <= Display_single:d7.D_hex[6]
+hexout7[0] <= Display_single:d8.D_hex[0]
+hexout7[1] <= Display_single:d8.D_hex[1]
+hexout7[2] <= Display_single:d8.D_hex[2]
+hexout7[3] <= Display_single:d8.D_hex[3]
+hexout7[4] <= Display_single:d8.D_hex[4]
+hexout7[5] <= Display_single:d8.D_hex[5]
+hexout7[6] <= Display_single:d8.D_hex[6]
+
+
+|bit16_value_save|d_latch_pro:ua0
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua1
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua2
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua3
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua4
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua5
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua6
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua7
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua8
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua9
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua10
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua11
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua12
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua13
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua14
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ua15
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub0
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub1
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub2
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub3
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub4
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub5
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub6
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub7
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub8
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub9
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub10
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub11
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub12
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub13
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub14
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|d_latch_pro:ub15
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|Display_single:d1
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|Display_single:d2
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|Display_single:d3
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|Display_single:d4
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|Display_single:d5
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|Display_single:d6
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|Display_single:d7
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit16_value_save|Display_single:d8
+D_in[0] => D_hex~26.IN0
+D_in[0] => D_hex~21.IN0
+D_in[0] => D_hex~18.IN0
+D_in[0] => D_hex~15.IN0
+D_in[0] => D_hex~12.IN0
+D_in[0] => D_hex~9.IN1
+D_in[0] => D_hex~4.IN0
+D_in[0] => D_hex~23.IN0
+D_in[0] => D_hex~40.IN0
+D_in[1] => D_hex~39.IN0
+D_in[1] => D_hex~37.IN0
+D_in[1] => D_hex~22.IN1
+D_in[1] => D_hex~20.IN1
+D_in[1] => D_hex~8.IN1
+D_in[1] => D_hex~3.IN1
+D_in[1] => D_hex~25.IN0
+D_in[1] => D_hex~28.IN1
+D_in[1] => D_hex~34.IN0
+D_in[1] => D_hex~32.IN0
+D_in[2] => D_hex~31.IN1
+D_in[2] => D_hex~20.IN0
+D_in[2] => D_hex~7.IN1
+D_in[2] => D_hex~36.IN1
+D_in[2] => D_hex~33.IN1
+D_in[3] => D_hex~33.IN0
+D_in[3] => D_hex~7.IN0
+D_in[3] => D_hex~3.IN0
+D_in[3] => D_hex~22.IN0
+D_in[3] => D_hex~28.IN0
+D_in[3] => D_hex~36.IN0
+D_in[3] => D_hex~31.IN0
+D_hex[0] <= D_hex~2.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[1] <= D_hex~6.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[2] <= D_hex~13.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[3] <= D_hex~19.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[4] <= D_hex~27.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[5] <= D_hex~30.DB_MAX_OUTPUT_PORT_TYPE
+D_hex[6] <= D_hex~41.DB_MAX_OUTPUT_PORT_TYPE
+
+
