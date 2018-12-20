@@ -1,0 +1,150 @@
+|bit5_subtracters
+a[0] => full_sub:u1.a
+a[1] => full_sub:u2.a
+a[2] => full_sub:u3.a
+a[3] => full_sub:u4.a
+a[4] => full_sub:u5.a
+b[0] => full_sub:u1.b
+b[1] => full_sub:u2.b
+b[2] => full_sub:u3.b
+b[3] => full_sub:u4.b
+b[4] => full_sub:u5.b
+bo_in => ~NO_FANOUT~
+bo_out <= full_sub:u5.bo_out
+diff[0] <= full_sub:u1.diff
+diff[1] <= full_sub:u2.diff
+diff[2] <= full_sub:u3.diff
+diff[3] <= full_sub:u4.diff
+diff[4] <= full_sub:u5.diff
+
+
+|bit5_subtracters|full_sub:u1
+a => half_sub:u1.a
+b => half_sub:u1.b
+bo_in => half_sub:u2.b
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+diff <= half_sub:u2.diff
+
+
+|bit5_subtracters|full_sub:u1|half_sub:u1
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u1|half_sub:u2
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u2
+a => half_sub:u1.a
+b => half_sub:u1.b
+bo_in => half_sub:u2.b
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+diff <= half_sub:u2.diff
+
+
+|bit5_subtracters|full_sub:u2|half_sub:u1
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u2|half_sub:u2
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u3
+a => half_sub:u1.a
+b => half_sub:u1.b
+bo_in => half_sub:u2.b
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+diff <= half_sub:u2.diff
+
+
+|bit5_subtracters|full_sub:u3|half_sub:u1
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u3|half_sub:u2
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u4
+a => half_sub:u1.a
+b => half_sub:u1.b
+bo_in => half_sub:u2.b
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+diff <= half_sub:u2.diff
+
+
+|bit5_subtracters|full_sub:u4|half_sub:u1
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u4|half_sub:u2
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u5
+a => half_sub:u1.a
+b => half_sub:u1.b
+bo_in => half_sub:u2.b
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+diff <= half_sub:u2.diff
+
+
+|bit5_subtracters|full_sub:u5|half_sub:u1
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bit5_subtracters|full_sub:u5|half_sub:u2
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
