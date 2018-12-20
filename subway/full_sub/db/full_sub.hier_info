@@ -1,0 +1,26 @@
+|full_sub
+a => half_sub:u1.a
+b => half_sub:u1.b
+bo_in => half_sub:u2.b
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+diff <= half_sub:u2.diff
+
+
+|full_sub|half_sub:u1
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_sub|half_sub:u2
+a => diff~0.IN0
+a => bo_out~0.IN0
+b => diff~0.IN1
+b => bo_out~0.IN1
+diff <= diff~0.DB_MAX_OUTPUT_PORT_TYPE
+bo_out <= bo_out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
